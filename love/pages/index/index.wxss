@@ -1,0 +1,233 @@
+.a {
+  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+}
+.a .header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: var(--themeColor2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+}
+.a .header .pic .iconfont.icon-zhaopian {
+  color: #fff;
+  font-size: 60rpx;
+  padding: 25rpx 15rpx;
+  background-color: #AEDEFF;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.a .header .pic text {
+  color: #fff;
+}
+.a .header .spe .iconfont.icon-yuyin {
+  color: #fff;
+  font-size: 60rpx;
+  padding: 25rpx 30rpx;
+  background-color: #A8EDCF;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.a .header .spe text {
+  color: #fff;
+  margin-left: 12rpx;
+}
+.a .header .jil .iconfont.iconfont.icon-riqi {
+  color: #fff;
+  font-size: 60rpx;
+  padding: 25rpx 30rpx;
+  background-color: #FFB9DA;
+  margin-top: 40rpx;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.a .header .jil text {
+  color: #fff;
+  margin-left: 16rpx;
+}
+.a .header .rem view.iconfont.icon-tixing {
+  color: #fff;
+  font-size: 60rpx;
+  padding: 25rpx;
+  background-color: #F3E591;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.a .header .rem text {
+  color: #fff;
+  margin-left: 10rpx;
+}
+.ca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  margin: 0 100rpx;
+}
+.ca text {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: var(--themeColor2);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .title {
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.content .title .ti_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130rpx;
+  height: 130rpx;
+  margin: 0 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content .title .text {
+  display: flex;
+  flex-direction: column;
+}
+.content .title .text .ti_title {
+  font-size: 48rpx;
+  width: 120rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 10rpx;
+}
+.content .title .text .ti_time {
+  color: darkgray;
+}
+.content .said {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content .said .said_text {
+  font-size: 36rpx;
+  margin: 30rpx 60rpx;
+}
+.content .said .said_img {
+  display: flex;
+  justify-content: center;
+}
+.content .tool {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+.content .tool .to1.iconfont.icon-aixin.active {
+  color: var(--themeColor3);
+}
+.content .tool .to1.iconfont.icon-aixin {
+  margin: 0 100rpx;
+  font-size: 44rpx;
+  color: #ada9a9;
+}
+.content .tool .to2.iconfont.icon-pinglun.active {
+  color: var(--themeColor3);
+}
+.content .tool .to2.iconfont.icon-pinglun {
+  margin-left: 80rpx;
+  font-size: 52rpx;
+  color: #ada9a9;
+  margin-top: -8rpx;
+}
+.content .inText .inp {
+  display: flex;
+  flex-direction: row;
+}
+.content .inText .inp input {
+  width: 60%;
+  margin: 0 60rpx;
+  border: 4rpx solid var(--themeColor1);
+  border-radius: 20rpx;
+}
+.content .inText .inp .ic.iconfont.icon-send {
+  font-size: 50rpx;
+  color: var(--themeColor2);
+}
+.content .inText .teta {
+  font-size: 38rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  color: var(--themeColor2);
+}
+.content .inText .te {
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 0;
+}
+.content .inText .te .ava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 40rpx;
+}
+.content .inText .te .total {
+  display: flex;
+  flex-direction: column;
+}
+.content .inText .te .total .smat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content .inText .te .total .smat .na {
+  font-size: 42rpx;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-right: 30rpx;
+}
+.content .inText .te .total .smat .ti {
+  color: darkgray;
+  margin-top: 10rpx;
+}
+.content .inText .te .total .box {
+  padding: 20rpx;
+  background-color: #cecbcb;
+  border-radius: 20rpx 10rpx;
+}
+.write {
+  position: fixed;
+  bottom: 60rpx;
+  font-size: 76rpx;
+  right: 50rpx;
+  padding: 20rpx;
+  background-color: var(--themeColor2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}

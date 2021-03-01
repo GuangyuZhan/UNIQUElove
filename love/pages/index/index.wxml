@@ -1,0 +1,182 @@
+<view class="a">
+		<view class="header">
+				<view class="pic">
+						<navigator url="/pages/picture/picture">
+							<view class="iconfont icon-zhaopian"></view>
+							<text>Pictures</text>
+						</navigator>
+				</view>
+				<view class="spe">
+						<navigator url="/pages/voice/voice">
+							<view class="iconfont icon-yuyin"></view>
+							<text>Voices</text>
+						</navigator>
+				</view>
+				<view class="jil">
+						<navigator url="/pages/date/date">
+							<view class="iconfont icon-riqi"></view>
+							<text>Dates</text>
+						</navigator>
+				</view>
+				<view class="rem">
+						<navigator url="/pages/remind/remind">
+							<view class="iconfont icon-tixing"></view>
+							<text>Reminds</text>
+						</navigator>
+				</view>
+		</view>
+</view>
+<SwitchTab tabs="{{tabs}}" bindtabsItemChange="tabsItemChange">
+		<block wx:if="{{tabIndex===1}}">
+			<block wx:if="{{mind}}">
+				<view class="content" wx:for="{{mind}}" wx:key="id">
+						<view class="title">
+								<view class="ti_img">
+										<image class="" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+								</view>
+								<view class="text">
+										<view class="ti_title">{{userInfo.nickName}}</view>
+										<view class="ti_time">{{item.date}}</view>
+								</view>
+						</view>
+						<view class="said">
+								<view class="said_text">{{item.text}}</view>
+								<view class="said_img" wx:for="{{item.imgList}}" wx:for-item="imgList">
+									<image class="" src="{{imgList}}" mode="widthFix"></image>
+								</view>
+						</view>
+						<view class="tool">
+								<view class="to1 iconfont icon-aixin {{item.loveAct?'active':''}}" bindtap='changeActive' data-index="{{index}}"></view>
+								<view class="to2 iconfont icon-pinglun {{item.textAct?'active':''}}" bindtap="showInput" data-index="{{index}}"></view>
+						</view>
+						<view class="inText" hidden="{{!item.textAct}}">
+								<view class="inp">
+										<input type="text" bindinput="getText" value="{{value}}"></input>
+										<view class="ic iconfont icon-send" bindtap="textInput" data-index="{{index}}"></view>
+								</view>
+								<view class="teta">Comments:  {{item.talkList.length}}</view>
+								<view class="te" wx:for="{{item.talkList}}">
+										<view class="ava">
+												<image mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+										</view>
+										<view class="total">
+												<view class="smat">
+														<view class="na">{{userInfo.nickName}}</view>
+														<view class="ti">{{item.time}}</view>
+												</view>
+												<view class="box">
+														<text>{{item.text}}</text>
+												</view>
+										</view>
+								</view>
+						</view>
+				</view>
+			</block>
+			<block wx:else class="ca">
+				<text>
+					什么都没有哦，赶紧写下第一个心情吧！
+				</text>
+			</block>
+		</block>
+		<block wx:if="{{tabIndex===0}}">
+			<block wx:if="{{mind}}">
+				<view class="content" wx:for="{{mind}}" wx:key="id">
+						<view class="title">
+								<view class="ti_img">
+										<image class="" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+								</view>
+								<view class="text">
+										<view class="ti_title">{{userInfo.nickName}}</view>
+										<view class="ti_time">{{item.date}}</view>
+								</view>
+						</view>
+						<view class="said">
+								<view class="said_text">{{item.text}}</view>
+								<view class="said_img" wx:for="{{item.imgList}}" wx:for-item="imgList">
+									<image class="" src="{{imgList}}" mode="widthFix"></image>
+								</view>
+						</view>
+						<view class="tool">
+								<view class="to1 iconfont icon-aixin {{item.loveAct?'active':''}}" bindtap='changeActive' data-index="{{index}}"></view>
+								<view class="to2 iconfont icon-pinglun {{item.textAct?'active':''}}" bindtap="showInput" data-index="{{index}}"></view>
+						</view>
+						<view class="inText" hidden="{{!item.textAct}}">
+								<view class="inp">
+										<input type="text" bindinput="getText" value="{{value}}"></input>
+										<view class="ic iconfont icon-send" bindtap="textInput" data-index="{{index}}"></view>
+								</view>
+								<view class="teta">Comments:  {{item.talkList.length}}</view>
+								<view class="te" wx:for="{{item.talkList}}">
+										<view class="ava">
+												<image mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+										</view>
+										<view class="total">
+												<view class="smat">
+														<view class="na">{{userInfo.nickName}}</view>
+														<view class="ti">{{item.time}}</view>
+												</view>
+												<view class="box">
+														<text>{{item.text}}</text>
+												</view>
+										</view>
+								</view>
+						</view>
+				</view>
+			</block>
+			<block wx:else>
+				<view class="ca"><text>
+					什么都没有，赶紧写下第一个心情吧！
+				</text></view>
+			</block>
+		</block>
+		<block wx:if="{{tabIndex===2}}">
+			<block wx:if="{{!mind}}">
+				<view class="content" wx:for="{{mind}}" wx:key="id">
+						<view class="title">
+								<view class="ti_img">
+										<image class="" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+								</view>
+								<view class="text">
+										<view class="ti_title">{{userInfo.nickName}}</view>
+										<view class="ti_time">{{item.date}}</view>
+								</view>
+						</view>
+						<view class="said">
+								<view class="said_text">{{item.text}}</view>
+								<view class="said_img" wx:for="{{item.imgList}}" wx:for-item="imgList">
+									<image class="" src="{{imgList}}" mode="widthFix"></image>
+								</view>
+						</view>
+						<view class="tool">
+								<view class="to1 iconfont icon-aixin {{item.loveAct?'active':''}}" bindtap='changeActive' data-index="{{index}}"></view>
+								<view class="to2 iconfont icon-pinglun {{item.textAct?'active':''}}" bindtap="showInput" data-index="{{index}}"></view>
+						</view>
+						<view class="inText" hidden="{{!item.textAct}}">
+								<view class="inp">
+										<input type="text" bindinput="getText" value="{{value}}"></input>
+										<view class="ic iconfont icon-send" bindtap="textInput" data-index="{{index}}"></view>
+								</view>
+								<view class="teta">Comments:  {{item.talkList.length}}</view>
+								<view class="te" wx:for="{{item.talkList}}">
+										<view class="ava">
+												<image mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+										</view>
+										<view class="total">
+												<view class="smat">
+														<view class="na">{{userInfo.nickName}}</view>
+														<view class="ti">{{item.time}}</view>
+												</view>
+												<view class="box">
+														<text>{{item.text}}</text>
+												</view>
+										</view>
+								</view>
+						</view>
+				</view>
+			</block>
+			<block wx:else><view class="ca"><text>
+					ta什么都没留下，赶紧提醒ta写下第一个心情吧！
+				</text></view></block>
+		</block>
+</SwitchTab>
+<view class="write iconfont icon-jilu3" bindtap="switchWrite"></view>

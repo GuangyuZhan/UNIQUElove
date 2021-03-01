@@ -1,0 +1,69 @@
+page{
+	background-color: var(--themeColor2);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  .wrap {
+		display: flex;
+		flex-direction: column;
+    textarea {
+			width: 100%;
+			height: 40vh;	
+			color: var(--themeColor3);
+			font-size: 34rpx;
+			border-bottom: 1rpx solid rgb(128, 125, 125);
+    }
+    .onl {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			width: 100%;
+      .icon.iconfont.icon-shangchuan {
+				width: 200rpx;
+				height: 200rpx;
+				// background-color: rgb(187, 95, 95);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 90rpx;
+				color: var(--themeColor3);
+				margin-left: -15rpx;
+      }
+      .img{
+				display: flex;
+				flex-direction: row;
+				position: relative;
+				margin:0 20rpx;
+				flex-wrap: wrap;
+				image {
+					width: 100rpx;
+					height: 100rpx;
+					overflow: hidden;
+				}
+				.iconfont.icon-shanchu{
+					position: absolute;
+					right: -20rpx;
+					top: -25rpx;
+					color: rgb(235, 65, 35);
+					font-size: 44rpx;
+				}
+			}
+    }
+  }
+
+  button {
+		width: 100%;
+		height: 100rpx;
+		background-color: var(--themeColor3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 200rpx;
+		border-radius: 50rpx;
+		color: #fff;
+  }
+}

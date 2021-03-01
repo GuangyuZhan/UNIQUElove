@@ -1,0 +1,66 @@
+page {
+  background-color: var(--themeColor2);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.content .wrap textarea {
+  width: 100%;
+  height: 40vh;
+  color: var(--themeColor3);
+  font-size: 34rpx;
+  border-bottom: 1rpx solid #807d7d;
+}
+.content .wrap .onl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.content .wrap .onl .icon.iconfont.icon-shangchuan {
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90rpx;
+  color: var(--themeColor3);
+  margin-left: -15rpx;
+}
+.content .wrap .onl .img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 0 20rpx;
+  flex-wrap: wrap;
+}
+.content .wrap .onl .img image {
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+}
+.content .wrap .onl .img .iconfont.icon-shanchu {
+  position: absolute;
+  right: -20rpx;
+  top: -25rpx;
+  color: #eb4123;
+  font-size: 44rpx;
+}
+.content button {
+  width: 100%;
+  height: 100rpx;
+  background-color: var(--themeColor3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200rpx;
+  border-radius: 50rpx;
+  color: #fff;
+}

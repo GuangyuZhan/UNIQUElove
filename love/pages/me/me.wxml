@@ -1,0 +1,29 @@
+<view class="content">
+		<view class="img_box">
+				<image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+		</view>
+		<view class="name">{{userInfo.nickName}}</view>
+		<view class="said">该用户很懒，还没有个性签名。。。</view>
+		<view class="wrap">
+				<view class="i1">
+						<view class="t1">Pictures</view>
+						<view class="t2">3</view>
+				</view>
+				<view class="i2">
+						<view class="t3">Lover</view>
+						<view class="t4">
+								<image class="" src="../../images/12-女主幸福空降.png" mode="widthFix"></image>
+						</view>
+				</view>
+				<view class="i3">
+						<view class="t5">Moods</view>
+						<view class="t6">5</view>
+				</view>
+		</view>
+		<view class="btn">
+				<view class="b1">Likes</view>
+				<view class="b2">Albums</view>
+				<view class="b3">Collections</view>
+				<view class="b4">Settings</view>
+		</view>
+</view>

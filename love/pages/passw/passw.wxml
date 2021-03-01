@@ -1,0 +1,10 @@
+<view class="content">
+	<image src="../../images/04-要脱单.png" mode="">	
+	</image>
+	<view class="hold">
+	请输入爱的秘钥：<input type="number" 
+	password="{{true}}" focus="{{true}}" maxlength="8" bindinput="handleInput"></input>
+	</view>
+	<image class="love" src="../../images/pw3.png" mode="scaleToFill" bindtap="checkPassw"/>	
+</view>
+

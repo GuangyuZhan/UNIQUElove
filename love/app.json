@@ -1,0 +1,42 @@
+{
+  "pages": [
+		"pages/mouse/mouse",
+		"pages/passw/passw",
+		"pages/index/index",
+		"pages/write/write",
+		"pages/me/me",
+		"pages/picture/picture",
+		"pages/voice/voice",
+		"pages/date/date",
+		"pages/remind/remind"
+	],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#A09FED",
+    "navigationBarTitleText": "Y💟W",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh":true
+	},
+	"tabBar": {
+		"custom":false,
+		"color":"#8a8a8a",
+		"selectedColor": "#B7B6F5",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+			"pagePath": "pages/index/index",
+			"iconPath": "images/首页.png",
+			"selectedIconPath": "images/首页1.png",
+			"text": "首页"
+		},{
+			"pagePath": "pages/me/me",
+			"iconPath": "images/我的.png",
+			"selectedIconPath": "images/我的1.png",
+			"text": "我的"
+		}]
+
+	},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

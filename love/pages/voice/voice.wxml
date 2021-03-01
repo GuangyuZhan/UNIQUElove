@@ -1,0 +1,12 @@
+<view class="content">
+	<view class="main">
+		<view class="trap">
+			
+		</view>
+	</view>
+	<view class="tool">
+		<view class="btn" bindtap="setVoice">
+			<text>录音</text>
+		</view>
+	</view>
+</view>

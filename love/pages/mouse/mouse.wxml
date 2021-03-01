@@ -1,0 +1,11 @@
+<view class="content">
+	<text class="title" selectable="false" space="false" decode="false">
+		Welcome to (Y💟W)’s house!
+	</text>
+	<text wx:for="{{contentText}}">
+		{{item}}
+	</text>	
+	<button class="tap" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo"></button>
+	<!-- <button open-type="" bindtap="addDb" type="primary">aaaa</button> -->
+</view>
+

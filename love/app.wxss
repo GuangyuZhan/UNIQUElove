@@ -1,0 +1,19 @@
+@import 'style/font.wxss';
+@import 'style/fontFamily.wxss';
+
+
+page,text,view,navigator,swiper,swiper-item,image{
+  margin: 0px;
+  padding: 0px;
+	box-sizing: border-box;
+}
+
+page,text{
+  font-size: 30rpx;
+}
+
+page{
+	--themeColor1: rgb(186,206,246);
+	--themeColor2: rgb(160,159,237);
+	--themeColor3: rgb(251,199,211);
+}

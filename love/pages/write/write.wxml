@@ -1,0 +1,13 @@
+<view class="content">
+	<view class="wrap">
+		<textarea type="text" placeholder="快写下你的心情吧" bindinput="getText" value="{{value}}"></textarea>
+		<view class="onl">
+			<view class="icon iconfont icon-shangchuan" bindtap="chooseImg"></view>
+			<view class="img" wx:for="{{imgList}}" bindtap="deleteImg" data-index="{{index}}">
+				<image src="{{item}}" mode=""></image>
+				<view class="iconfont icon-shanchu"></view>
+			</view>
+		</view>
+	</view>
+	<button bindtap="uploadFile">立即发表</button>
+</view>

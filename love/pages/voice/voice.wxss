@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .main {
+  background-color: #dddd;
+  height: 90vh;
+  width: 100%;
+}
+.content .tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content .tool .btn {
+  background-color: var(--themeColor2);
+  width: 80%;
+  border-radius: 60rpx;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .tool .btn text {
+  color: #fff;
+  font-size: 34rpx;
+}
